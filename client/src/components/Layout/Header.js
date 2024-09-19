@@ -24,8 +24,11 @@ import {
 } from '@headlessui/react';
 import Logo from "../../Images/vs-logo.webp"
 
-import { FaFacebookF, FaReddit, FaTwitter, FaChevronDown } from "react-icons/fa";
-import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { FaFacebookF, FaReddit, FaTwitter, FaChevronDown} from "react-icons/fa";
+import { HiMiniBars3 } from "react-icons/hi2";
+import { BsCart3 } from "react-icons/bs";
+import { HiXMark } from "react-icons/hi2";
+
 
 
 
@@ -189,7 +192,7 @@ const Header = () => {
                 >
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Close menu</span>
-                  <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+                  <HiXMark aria-hidden="true" className="h-6 w-6" />
                 </button>
               </div>
 
@@ -336,7 +339,7 @@ const Header = () => {
                 >
                   <span className="absolute -inset-0.5"></span>
                   <span className="sr-only">Open menu</span>
-                  <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                  <HiMiniBars3 aria-hidden="true" className="h-6 w-6" />
                 </button>
 
                 {/* Logo */}
@@ -528,7 +531,7 @@ const Header = () => {
                     {/* <li className="nav-item"> */}
                     <NavLink to="/cart" className="nav-link">
                       <Badge count={cart?.length} showZero offset={[10, -5]}>
-                        <ShoppingBagIcon
+                        <BsCart3
                           aria-hidden="true"
                           className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                         />
@@ -536,7 +539,7 @@ const Header = () => {
                     </NavLink>
                     {/* </li> */}
                     {/* <a href="#" className="group -m-2 flex items-center p-2">
-                    <ShoppingBagIcon
+                    <BsCart3
                       aria-hidden="true"
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                     />
@@ -550,7 +553,7 @@ const Header = () => {
           </nav>
           <div className="d-lg-flex d-none px-14  items-center bg-drk-red text-sm font-medium text-white">
             <div className="footer-social flex items-center">
-              {/* <a className='text-base bg-drk-blue inline-block p-3 flex me-3' href="">All Categories <Bars3Icon className=" ms-4 h-6 w-6" /></a> */}
+              {/* <a className='text-base bg-drk-blue inline-block p-3 flex me-3' href="">All Categories <HiMiniBars3 className=" ms-4 h-6 w-6" /></a> */}
               {/* <a className='text-base bg-drk-blue inline-block p-2 me-3' href=""><FaReddit /></a>
             <a className='text-base bg-drk-blue inline-block p-2 me-3' href=""><FaTwitter /></a> */}
               {/* <li className="nav-item dropdown"> */}
@@ -559,7 +562,7 @@ const Header = () => {
                 to={"/categories"}
                 data-bs-toggle="dropdown"
               >
-                Categories <Bars3Icon className=" ms-4 h-6 w-6" />
+                Categories <HiMiniBars3 className=" ms-4 h-6 w-6" />
               </Link>
               <ul className="dropdown-menu">
                 <li>
