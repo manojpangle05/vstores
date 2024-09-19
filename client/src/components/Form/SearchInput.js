@@ -2,7 +2,8 @@ import React from "react";
 import { useSearch } from "../../context/search";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+
+import { IoSearchOutline } from "react-icons/io5";
 
 const SearchInput = () => {
   const [values, setValues] = useSearch();
@@ -36,7 +37,7 @@ const SearchInput = () => {
           onChange={(e) => setValues({ ...values, keyword: e.target.value })}
         />
         <button className="btn subscribe-btn bg-drk-blue text-white rounded-lg" type="submit">
-        <MagnifyingGlassIcon aria-hidden="true" className="h-6 w-6" /> 
+        <IoSearchOutline aria-hidden="true" className="h-6 w-6" /> 
         </button>
       </form>
     </div>
