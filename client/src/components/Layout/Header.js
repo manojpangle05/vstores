@@ -23,7 +23,6 @@ import {
   TabPanels,
 } from '@headlessui/react';
 import Logo from "../../Images/vs-logo.webp"
-import ReactCountryFlag from "react-country-flag";
 
 import { FaFacebookF, FaReddit, FaTwitter, FaChevronDown } from "react-icons/fa";
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline';
